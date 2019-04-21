@@ -3,7 +3,6 @@ const path = require('path');
 
 const handlePublicRoute = (req, res, endpoint) => {
     const [, extensionType] = endpoint.split('.');
-    console.log(endpoint);
     const extensionSelector = {
         html: 'text/html',
         css: 'text/css',
