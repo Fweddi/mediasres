@@ -12,7 +12,8 @@
   },
   "scripts": {
     "test": "tape src/tests/test.js | tap-spec",
-    "start": "nodemon src/server.js"
+    "start": "node src/server.js",
+    "dstart": "nodemon src/server.js"
   },
   "author": "",
   "license": "ISC"
