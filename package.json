@@ -1,0 +1,19 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.18.11",
+    "supertest": "^4.0.2",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.10.1"
+  },
+  "scripts": {
+    "test": "tape src/tests/test.js | tap-spec",
+    "start": "nodemon src/server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

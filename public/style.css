@@ -1,0 +1,12 @@
+body {
+    background-color:#FDC500;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filmbook {
+    height: 10px;
+    width: 160px;
+}
+
