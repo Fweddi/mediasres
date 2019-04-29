@@ -4,7 +4,9 @@
   "description": "",
   "main": "src/server.js",
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "env2": "^2.2.2",
+    "normalize.css": "^8.0.1",
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.11",
