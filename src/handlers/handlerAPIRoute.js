@@ -4,7 +4,9 @@ require('env2')('.env');
 const handlerAPIRoute = (req, res, endpoint) => {
     const userID = endpoint.split('=')[1];
     const goodreadsAPI = process.env.GOODREADS_KEY;
-    const apiUrl = `https://www.goodreads.com/user/show/${userID}.xml?key=${goodreadsAPI}`;
+    const apiUrl = `https://www.goodreads.com/review/list/${userID}.xml?key=${goodreadsAPI}&v=2&shelf=read&sort=date_read`;
+
+
 
     nodeRequest(apiUrl, { json: true }, (error, response, body) => {
         if (error) {
