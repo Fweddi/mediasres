@@ -6,8 +6,6 @@ const handlerAPIRoute = (req, res, endpoint) => {
     const goodreadsAPI = process.env.GOODREADS_KEY;
     const apiUrl = `https://www.goodreads.com/review/list/${userID}.xml?key=${goodreadsAPI}&v=2&shelf=read&sort=date_read`;
 
-
-
     nodeRequest(apiUrl, { json: true }, (error, response, body) => {
         if (error) {
             response.writeHead(500,{'Content-Type' : 'text/html'})
