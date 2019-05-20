@@ -92,4 +92,8 @@ const populateBook = (title, authorName, bookType) => {
             }
 }
 
-goodreadsButton.addEventListener('click', () => goodreadsFetch(3297766));
+//Anna
+goodreadsButton.addEventListener('click', () => goodreadsFetch(27116564));
+
+//Joko
+// goodreadsButton.addEventListener('click', () => goodreadsFetch(3297766));
