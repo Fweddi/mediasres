@@ -51,10 +51,13 @@ button {
     height: 300px;
     width: 100vw;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: baseline;
 }
 
+
+/* Normal Book properties */
 
 .bookSpine {
     width: 36px;
@@ -73,32 +76,14 @@ button {
     height: 150px;
 }
 
-.bookSmallLeaning {
-
-}
-
 .bookMedium {
     font-size: 11px;
     height: 175px;
 }
 
-.bookMediumLeaning {
-
-}
-
 .bookLarge {
     font-size: 9px;
     height: 200px;
-}
-
-.bookLargeLeaning {
-
-}
-
-.bookCover {
-    transform: skew(0deg, -70deg);
-    width: 10%;
-    height: 100%;
 }
 
 .bookTitle {
@@ -117,12 +102,6 @@ button {
     padding: 10%;
 }
 
-.bookShell {
-    /* position: absolute;
-    top: 0;
-    left: 0; */
-}
-
 .bookTotalSmall {
     position: relative;
     height: 165px;
@@ -139,4 +118,70 @@ button {
     position: relative;
     height: 215px;
     width: 45px;
+}
+
+/* Leaning Book properties */
+
+.bookSpineLeaning {
+    width: 36px;
+    height: 200px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 0;
+    left: 0;
+    transform: rotate(14.79deg);
+}
+
+.bookSmallLeaning {
+    font-size: 13px;
+    height: 150px;
+}
+
+.bookMediumLeaning {
+    font-size: 11px;
+    height: 175px;
+}
+
+.bookLargeLeaning {
+    font-size: 9px;
+    height: 200px;
+}
+
+.bookTitleLeaning {
+    writing-mode: vertical-rl;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    padding: 10%;
+}
+
+.bookAuthorLeaning {
+    writing-mode: vertical-rl;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    padding: 10%;
+}
+
+.bookTotalSmallLeaning {
+    position: relative;
+    height: 172px;
+    width: 86px;
+}
+
+.bookTotalMediumLeaning {
+    position: relative;
+    height: 196px;
+    width: 93px;
+    display: flex;
+    justify-content: center;
+}
+
+.bookTotalLargeLeaning {
+    position: relative;
+    height: 220px;
+    width: 99px;
 }
