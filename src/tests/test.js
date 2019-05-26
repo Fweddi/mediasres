@@ -52,3 +52,25 @@ test('Router returns error.html', (t) => {
     })
 })
 
+test('Router returns goodreads book data', (t) => {
+    supertest(router)
+    .get('/goodreads?=number')
+    .expect('Content-Type', /json/)
+    .expect(200)
+    .end((err, res) => {
+        t.error(err);
+        t.end();
+    })
+})
+
+test('Router returns goodreads username', (t) => {
+    supertest(router)
+    .get('/goodreadsUser')
+    .expect('Content-Type', /json/)
+    .expect(200)
+    .end((err, res) => {
+        t.error(err);
+        t.end();
+    })
+})
+

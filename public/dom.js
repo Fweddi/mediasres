@@ -1,10 +1,17 @@
 const goodreadsButton = document.querySelector('.button__goodreads');
+const userDataButton = document.querySelector('.button__userData');
 const bookshelf = document.querySelector('.bookshelf');
 
 const goodreadsFetch = (userID) => {
     fetch(`/goodreads?=${userID}`)
     .then(res => res.json())
     .then(JSON => goodreadsProcessor(JSON))
+    .catch(err => console.error(err));
+}
+
+const goodreadsUserFetch = () => {
+    fetch('/goodreadsUser')
+    .then(res => console.log(res))
     .catch(err => console.error(err));
 }
 
@@ -92,8 +99,15 @@ const populateBook = (title, authorName, bookType) => {
             }
 }
 
+
+
+userDataButton.addEventListener('click', goodreadsUserFetch);
+
+//Freddie
+goodreadsButton.addEventListener('click', () => goodreadsFetch(61879175));
+
 //Anna
-goodreadsButton.addEventListener('click', () => goodreadsFetch(27116564));
+// goodreadsButton.addEventListener('click', () => goodreadsFetch(27116564));
 
 //Joko
 // goodreadsButton.addEventListener('click', () => goodreadsFetch(3297766));
