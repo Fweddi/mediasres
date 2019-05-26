@@ -1,7 +1,7 @@
 <svg width="45" height="215" viewBox="0 0 45 215" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9 0V200L0 215V15L9 0Z" fill="#428651"/>
+<path class="bookColour" d="M9 0V200L0 215V15L9 0Z" fill="#428651"/>
 <path d="M9 2.5L44 3L36 16H1L9 2.5Z" fill="#E9E6E6"/>
-<rect y="15" width="36" height="200" fill="#428651"/>
+<rect class="bookColour" y="15" width="36" height="200" fill="#428651"/>
 <rect x="0.5" y="15.5" width="35" height="199" stroke="black" stroke-opacity="0.1"/>
-<path d="M45 0V200L36 215V15L45 0Z" fill="#428651"/>
+<path class="bookColour" d="M45 0V200L36 215V15L45 0Z" fill="#428651"/>
 </svg>
